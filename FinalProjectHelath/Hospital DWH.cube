@@ -1,0 +1,990 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bc5aa8e7-757b-43e1-b681-92e2685a3c64" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hospital DWH</ID>
+  <Name>Hospital DWH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7338" scrolltop="-17" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="24977" y="16320" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="AddressDim" left="3242" top="14481" logicalid="16" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_AddressDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="RoomsDim" left="11863" top="10134" logicalid="17" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_RoomsDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="RecordDim" left="8642" top="14481" logicalid="18" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_RecordDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="MedicineDim" left="20" top="7600" logicalid="19" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000034060000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_MedicineDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DoctorDim" left="11863" top="4707" logicalid="20" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000d30b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DoctorDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="PatientDim" left="9629" top="360" logicalid="21" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_PatientDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="PatientFT" left="5420" top="5894" logicalid="22" controlid="7" masterid="0" hint1="0" hint2="0" width="4043" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cb0f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_PatientFT" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DateDim" left="2255" top="0" logicalid="23" controlid="8" masterid="0" hint1="0" hint2="0" width="4974" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00006e13000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DateDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4343" top="10594" logicalid="24" controlid="9" masterid="0" hint1="0" hint2="0" width="2298" height="4387" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__PatientFT__Locat__49C3F6B7]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4742" y="14481" />
+              <point x="4742" y="12688" />
+              <point x="6341" y="12688" />
+              <point x="6341" y="10894" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9163" top="8644" logicalid="25" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="2863" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__PatientFT__RoomK__5535A963]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="12" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11863" y="11107" />
+              <point x="10663" y="11107" />
+              <point x="10663" y="8944" />
+              <point x="9463" y="8944" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7691" top="10594" logicalid="26" controlid="11" masterid="0" hint1="0" hint2="0" width="2851" height="4387" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__PatientFT__Recor__534D60F1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="7" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10142" y="14481" />
+              <point x="10142" y="12688" />
+              <point x="7991" y="12688" />
+              <point x="7991" y="10894" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2720" top="7995" logicalid="27" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__PatientFT__Medic__4E88ABD4]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="7" sourceattachpoint="13" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="8394" />
+              <point x="5420" y="8394" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9163" top="5821" logicalid="28" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="1773" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__PatientFT__Docto__4BAC3F29]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="7" sourceattachpoint="14" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11863" y="6220" />
+              <point x="10663" y="6220" />
+              <point x="10663" y="7294" />
+              <point x="9463" y="7294" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7691" top="1808" logicalid="29" controlid="14" masterid="0" hint1="0" hint2="0" width="3838" height="4386" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__PatientFT__Patie__5165187F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="7" sourceattachpoint="5" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11129" y="2307" />
+              <point x="11129" y="4100" />
+              <point x="7991" y="4100" />
+              <point x="7991" y="5894" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4343" top="1808" logicalid="30" controlid="15" masterid="0" hint1="0" hint2="0" width="2298" height="4386" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__PatientFT__DateK__47DBAE45]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="7" sourceattachpoint="9" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4742" y="2307" />
+              <point x="4742" y="4100" />
+              <point x="6341" y="4100" />
+              <point x="6341" y="5894" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7338</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-17</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>85</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="cd9d0d67-7a48-4444-a19a-5db3c3c86830">
+      <ID>Address Dim</ID>
+      <Name>Address Dim</Name>
+      <DimensionID>Address Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="294393c8-3570-480d-8df4-062bac1597a9">
+          <AttributeID>Address ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b11290e3-af6b-4244-9186-8cdaa79fe873">
+          <AttributeID>Street</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43350b03-014a-4402-8173-888005707b6e">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b98a867e-4bca-48e3-ab45-ec0b16157ce8">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0e250099-081c-40ba-8f6c-3335d7fb3d4a">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="27478b88-3317-47c7-be88-e3c81bdd6da4">
+      <ID>Medicine Dim</ID>
+      <Name>Medicine Dim</Name>
+      <DimensionID>Medicine Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d5c649e0-e565-4fa6-8e57-0d3cf4b00453">
+          <AttributeID>Medicine ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47805cd0-5aeb-4d58-8d87-d622681ba8a7">
+          <AttributeID>Medcine Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3767c862-3f07-4e8a-a976-b79d9101bfc5">
+      <ID>Date Dim</ID>
+      <Name>Date Dim</Name>
+      <DimensionID>Date Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="de1815e9-f688-4d82-b91c-dcf9f96e8e46">
+          <AttributeID>TREATMENT START DATE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc4b758b-b21f-4be2-b9fc-8d989b47aace">
+          <AttributeID>Start Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3aca7a1d-7be7-458a-ba03-28e674eb614d">
+          <AttributeID>Start Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bcf19b7d-5303-401b-94e7-fbe5b78a22dc">
+          <AttributeID>Start Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c3154331-76d2-4117-9d6c-b34e097f8370">
+      <ID>Patient Dim</ID>
+      <Name>Patient Dim</Name>
+      <DimensionID>Patient Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="481f4a9a-4586-40f1-b965-a0032cc2b552">
+          <AttributeID>Patient ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="421903de-1115-4a99-bf8e-406676f2916b">
+          <AttributeID>Patient Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6886b951-4ccd-4015-aa7c-04a08b5aacd3">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="81b0795a-b92e-4106-a703-9969aa65e837">
+      <ID>Rooms Dim</ID>
+      <Name>Rooms Dim</Name>
+      <DimensionID>Rooms Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2600c12e-4622-49dd-87a7-b03669d5226d">
+          <AttributeID>ROOM ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="18bc8c8c-47f9-4034-8c8c-efb07284e4f8">
+          <AttributeID>TYPE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="549ac234-6fbe-4eab-b1bc-7ee0aab3761b">
+          <AttributeID>LOCATION</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="57fdbcfe-977e-499c-8cd3-13ca9d0e6778">
+      <ID>Doctor Dim</ID>
+      <Name>Doctor Dim</Name>
+      <DimensionID>Doctor Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="410e3c50-949d-4982-8e03-45c9c8e6859e">
+          <AttributeID>Doctor ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0206239d-9192-40f8-8221-2f4ba0560b43">
+          <AttributeID>Doctor Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2a2fe942-53a3-4907-8ffa-25f8ead50c6a">
+          <AttributeID>E Mail</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="13f5d675-4211-43bf-b5a1-534678521a15">
+          <AttributeID>Sex</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fddfd5b4-32fd-4275-9ba6-da9d353f6fea">
+          <AttributeID>Street Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8adb4196-f529-471d-b579-62fd1c01584a">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9c218df4-2934-48af-a26c-016857baeaee">
+      <ID>Record Dim</ID>
+      <Name>Record Dim</Name>
+      <DimensionID>Record Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c5448156-1971-44c1-8a24-51f15ce6057e">
+          <AttributeID>Record ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4cf5920c-1984-4232-8840-219daaf1679e">
+          <AttributeID>Response</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <Perspectives>
+    <Perspective dwd:design-time-name="9e86fe2f-2475-4b29-a751-5434fbf34afb">
+      <ID>Perspective</ID>
+      <Name>Year_type_city_patientCount</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="54051021-8eeb-4819-acd0-39f499156409">
+          <CubeDimensionID>Address Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="868e4bf0-e7e0-45f9-a5f1-9c98b50538bf">
+              <AttributeID>Address ID</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="07ad3ce9-4ad9-4a89-a699-ee5aaaa56a46">
+              <AttributeID>Street</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="bf5f2d16-3da5-4c95-99be-d5ba060aced2">
+              <AttributeID>City</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="5fba4bda-f6f8-44c5-83e8-a2f0aa7d47ef">
+              <AttributeID>State</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="58f8c162-bfca-4d88-885e-5c4d9dac7ecb">
+              <AttributeID>Country</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="cf85e364-a426-4204-92d4-186c18668f62">
+          <CubeDimensionID>Date Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="41cc5fc4-baa9-45df-bbaf-6aaf2edb16e5">
+              <AttributeID>Start Year</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="0a32ba85-bf65-4df1-8731-e888c4f983cb">
+          <CubeDimensionID>Rooms Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0cb5a3d0-51d9-4bad-a14e-a479a08f559b">
+              <AttributeID>TYPE</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="530c0de8-5a18-4546-9704-4b77102c908b">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="c00c7427-a39e-4df0-85a7-1f21268c1525">
+              <MeasureID>Patient FT Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="bf3238a2-bce1-4ae7-beed-b5f9cc591dea">
+      <ID>Perspective 1</ID>
+      <Name>year-city_respon_patientcount</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="cf13262e-3d2f-4c50-86ed-8c685b492fc2">
+          <CubeDimensionID>Address Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5d965240-a130-4f5a-b049-e1c59685ed19">
+              <AttributeID>City</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="cf485254-6116-4545-bb61-edd8f58d3d51">
+          <CubeDimensionID>Date Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3336e694-d9b0-47cd-b42b-e934c9e9e819">
+              <AttributeID>Start Year</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="e791805f-f330-4ce6-b74c-4eab739a93d3">
+          <CubeDimensionID>Record Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="00dbb576-7960-4e66-8d23-914ee980a27f">
+              <AttributeID>Response</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="ae3f254e-4d38-4536-be6a-9065d18af2d5">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="d5909784-8bef-4ddf-b782-92b66cb95750">
+              <MeasureID>Patient FT Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="e275c6e4-eb25-41a6-a2eb-cd24f5c0c90d">
+      <ID>Perspective 2</ID>
+      <Name>typ_local_gen_patienCount_total</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="ae925010-9c38-44bd-915a-c34d8e05b389">
+          <CubeDimensionID>Rooms Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3775911e-4235-48ac-b591-379fcf991553">
+              <AttributeID>TYPE</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9eb29a45-f5db-4e67-9fa3-95b6a2a229dc">
+              <AttributeID>LOCATION</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="80cb42f0-05a2-40c7-8cb1-f93dd6e02389">
+          <CubeDimensionID>Address Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d626084a-6d87-467b-a0da-5843f025d177">
+              <AttributeID>City</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="8850a537-d2e5-4cc3-b6e7-7130161ae5d4">
+          <CubeDimensionID>Patient Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a7e50ac2-3428-496a-9dfd-649b8f546405">
+              <AttributeID>Gender</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="f115136b-6714-429d-8d54-c37082605a7b">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="5076e08e-af96-4334-94c8-988a900809c3">
+              <MeasureID>Patient FT Count</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="ff5abf08-073e-449a-acf1-57d5b45d4600">
+              <MeasureID>Total Ammount</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="7840a1e4-dcdc-43c1-a19a-71de8bb010c2">
+      <ID>Perspective 3</ID>
+      <Name>Doc_respon_patienConut_qty_price</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="7411e746-443f-4029-b5d0-173d5bcf23cc">
+          <CubeDimensionID>Record Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="baf0c2dc-b58f-4765-8d4e-c01232b29ddb">
+              <AttributeID>Response</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="820698cf-4f64-49a2-a7c3-9ee68657463f">
+          <CubeDimensionID>Doctor Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ddb5ca00-0200-414c-a8e6-15809011bf21">
+              <AttributeID>Doctor Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="5984e7e2-7286-4a2a-963f-ad749154ff69">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="6347b32d-6833-44e5-b1bb-923457b59eb8">
+              <MeasureID>Medcine Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="0901b53c-4bd1-465a-b79e-0722a49b024f">
+              <MeasureID>Medcine Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="11b9e419-f6b6-49c0-bc10-2e170ea51b3b">
+              <MeasureID>Patient FT Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="7c0e7d04-3f39-4aa3-8630-51efdb39dc31">
+      <ID>Perspective 4</ID>
+      <Name>Year_mon_price_qty</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="0000040d-8107-4b44-88ca-e9bdf59d6850">
+          <CubeDimensionID>Date Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5d66ae70-e4cd-4957-9005-d65f2d16549d">
+              <AttributeID>Start Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="189d50fd-8989-49f6-adfa-3df8da80587b">
+              <AttributeID>Start Year</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="87b4c6a4-c981-4201-ae64-f04f86041de7">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="a84b501b-9b91-4b73-94a7-47a902ae4c21">
+              <MeasureID>Medcine Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="f3cdc827-5ae5-4eed-b005-4c06c20fb1aa">
+              <MeasureID>Medcine Quantity</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="ed762da9-f56a-48d3-ba65-e4508403236d">
+      <ID>Perspective 5</ID>
+      <Name>Year_mon_day_patientCoun_qty_total</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="f8a10357-8071-43c7-98cb-ecc8b7ad7268">
+          <CubeDimensionID>Date Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="df6f7ef0-3a67-4407-bc51-741368bcbf5f">
+              <AttributeID>Start Day</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b30632cf-111b-431d-9e2a-e1e1da9bfba2">
+              <AttributeID>Start Month</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="6b556b61-6fe2-4d9f-80b8-6a4a7c116206">
+              <AttributeID>Start Year</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="df8f57a9-9d2f-4f24-a0a1-4d7291a5d47e">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="6f3b274b-6404-406e-9cd4-d0f63c062619">
+              <MeasureID>Medcine Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="31441f33-37d9-483f-adfa-454361103d51">
+              <MeasureID>Total Ammount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="dfd6fd70-e9cb-4679-9d58-4a0c7540235e">
+              <MeasureID>Patient FT Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="9146003e-499e-43e6-aa95-5e6cb69fa763">
+      <ID>Perspective 6</ID>
+      <Name>room_qrty_toatal_price_patientCount</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="6f4498a3-1485-42f5-be67-19e82b3f6937">
+          <CubeDimensionID>Rooms Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b8ff4240-dbb4-4290-b111-8885b840748c">
+              <AttributeID>ROOM ID</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="4609c293-c336-4ec8-8a7b-811a7609c36c">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="6be04ecb-96ea-4a9f-b3bb-38de73f20211">
+              <MeasureID>Medcine Price</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="3e768344-4045-4fab-a0fa-f6c38654bbb5">
+              <MeasureID>Medcine Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="5aa6e81c-af79-4bad-af0c-17575d78c8e1">
+              <MeasureID>Total Ammount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="3abb03d0-3ae5-4031-a5b5-3f735143a511">
+              <MeasureID>Patient FT Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="efc8ce76-fb07-4aea-919d-c90320a03d90">
+      <ID>Perspective 7</ID>
+      <Name>City_year_patientCount_qty_total_totaSpend</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="adabe03d-34c6-45f0-bc50-95ac659a57c7">
+          <CubeDimensionID>Address Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="50ab1929-9449-4c1b-8698-61b855d34f4e">
+              <AttributeID>City</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="dc0ea3ca-5e7c-438a-b7c8-b72bcd66a802">
+          <CubeDimensionID>Date Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8d54e550-2c7a-4057-8b0f-a91a464e1522">
+              <AttributeID>Start Year</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="2fc78417-d0ba-487a-adce-f0376441de65">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="5d82d41c-b3c2-402c-be36-a8b3bc207416">
+              <MeasureID>Medcine Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="8f3091f3-5adc-4705-8557-4976161c6294">
+              <MeasureID>Total Ammount</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="41a701e5-4bf7-4d0f-8c62-bbea0f3fa399">
+              <MeasureID>Total Spend In Medicine</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="02a74c22-b08c-4dcd-a5d8-b511b70ab574">
+              <MeasureID>Patient FT Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="55257cf8-7be9-461c-b34b-eb5e43561ee9">
+      <ID>Perspective 8</ID>
+      <Name>medici_qty_spend_year</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="7519accc-1de0-454a-be9d-9376884d6ba7">
+          <CubeDimensionID>Medicine Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="08a39d5e-35a3-4c14-9a79-e557015737a3">
+              <AttributeID>Medcine Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension dwd:design-time-name="31cd0a60-f8b4-4718-929b-c28f6af15938">
+          <CubeDimensionID>Date Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aff93c88-b0c7-46a1-92df-96ec964ec966">
+              <AttributeID>Start Year</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="d615a4ef-45b3-427c-b0da-25b6ef930140">
+          <MeasureGroupID>Patient FT</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="8c995919-b63f-44d4-a046-a0842ee59e9b">
+              <MeasureID>Medcine Quantity</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="92a98132-941b-4d20-af73-ee97ec7b1c57">
+              <MeasureID>Total Spend In Medicine</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+  </Perspectives>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="988366ec-7175-421a-8fa3-9ab5322f2900">
+      <ID>Patient FT</ID>
+      <Name>Patient FT</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="4221edb3-ac3a-4f56-bd96-1617bafcd80e">
+          <ID>Medcine Price</ID>
+          <Name>Medcine Price</Name>
+          <Source dwd:design-time-name="d628a6ad-96c9-4c50-8193-8eff15e83158">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="693bc8c5-810a-4f81-a82d-87d62b15c82a">
+              <TableID>dbo_PatientFT</TableID>
+              <ColumnID>MedcinePrice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="67ec2959-c8b7-481c-a7f6-5c92aeb17d67">
+          <ID>Medcine Quantity</ID>
+          <Name>Medcine Quantity</Name>
+          <Source dwd:design-time-name="867ceb33-125b-4f2d-a0ae-b62ce3d5dfd8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7be5caad-b72e-44e6-b596-a04c917a432d">
+              <TableID>dbo_PatientFT</TableID>
+              <ColumnID>MedcineQuantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b6ba53f1-9556-48e7-ae18-b6058e76e903">
+          <ID>Total Ammount</ID>
+          <Name>Total Ammount</Name>
+          <Source dwd:design-time-name="891a562d-30f0-4d2b-940b-704dcd5a4141">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9a4b232d-0e7b-4997-88b5-68fde363eca1">
+              <TableID>dbo_PatientFT</TableID>
+              <ColumnID>TotalAmmount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="60e50611-4f9a-40b1-8d2a-e80fb9635907">
+          <ID>Total Spend In Medicine</ID>
+          <Name>Total Spend In Medicine</Name>
+          <Source dwd:design-time-name="be872b4b-208d-4afb-a63e-55295caef661">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b799a60a-425e-453b-b4bc-f202f2f4f2ce">
+              <TableID>dbo_PatientFT</TableID>
+              <ColumnID>TotalSpendInMedicine</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="21314470-d575-43b1-9d66-91e202bcd73f">
+          <ID>Patient FT Count</ID>
+          <Name>Patient FT Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="191113cc-bdf3-46af-a8e3-c2c70d2afa97">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="98cfb79e-5912-41e1-a82e-a7dae2917cdf">
+              <TableID>dbo_PatientFT</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4889b347-7d2a-4014-b57d-4d85e8a0ebdd">
+          <CubeDimensionID>Address Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7ea3c6aa-0a39-494a-ad98-322f2e987137">
+              <AttributeID>Address ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a16442ce-6d75-4cd9-9e1f-b591d7ceb2f5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d95b0426-a8db-441a-ae4a-5c3e2986f01f">
+                    <TableID>dbo_PatientFT</TableID>
+                    <ColumnID>LocationKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3cefefe0-1b30-48f1-ae2c-df9a597f6eb3">
+          <CubeDimensionID>Medicine Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="397514b7-8148-4fba-b5a0-c478245b5a7b">
+              <AttributeID>Medicine ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="eb7b8cd8-653f-4abd-8b38-2e2b250067af">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="55e9a724-b52a-4aaa-b26f-f0e162efd6c2">
+                    <TableID>dbo_PatientFT</TableID>
+                    <ColumnID>MedicineKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b61c80e8-08d8-4e8f-8506-fa14141ae9f8">
+          <CubeDimensionID>Date Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4e5543be-47f1-47bd-b6c0-fb861924ec30">
+              <AttributeID>TREATMENT START DATE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="212befb0-6cc9-4ecf-bc18-91d84c4de820">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec904e5a-e8ff-49d2-9ddc-5494e3b1b67c">
+                    <TableID>dbo_PatientFT</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="361268ae-cfca-4f83-b2ea-95e5ea7aed29">
+          <CubeDimensionID>Patient Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="09cb8822-0330-4ffe-a3e0-605836d666c5">
+              <AttributeID>Patient ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="31b8855b-8d19-4131-902f-3b104584b73e">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0357186b-8f65-430a-a9c7-213c6126ac30">
+                    <TableID>dbo_PatientFT</TableID>
+                    <ColumnID>PatientKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5ddd7909-4e71-4c0a-bcd9-b88efd2b8480">
+          <CubeDimensionID>Rooms Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8cb2ff3e-24d2-4c20-9a75-8157d58c57ed">
+              <AttributeID>ROOM ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a11757ee-d4db-49e8-a737-b0259ef2fad1">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="157e3eff-07d9-45f5-807f-7e130b10d02c">
+                    <TableID>dbo_PatientFT</TableID>
+                    <ColumnID>RoomKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c63900a8-8f19-47cd-9f50-da8cee1e4da2">
+          <CubeDimensionID>Doctor Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="efe68a61-0522-490b-aa62-1dea624a6db8">
+              <AttributeID>Doctor ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0a9656d8-3712-47cd-924f-89ab2d9a450f">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="013e3440-2e3c-4f4c-9c31-7542390415de">
+                    <TableID>dbo_PatientFT</TableID>
+                    <ColumnID>DoctorKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="747c351c-50ac-4c6f-9c38-3383622707e4">
+          <CubeDimensionID>Record Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="eedc5dc8-8026-40b5-869c-13f3b7bda953">
+              <AttributeID>Record ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5ff2364e-7bab-429d-b82d-e24707488cbb">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a5667a01-0005-4d67-b5bb-47a87e50e41f">
+                    <TableID>dbo_PatientFT</TableID>
+                    <ColumnID>RecordKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="649848ac-8bd8-453f-aefd-9157a6c9b2ae">
+    <DataSourceViewID>Hospital DWH</DataSourceViewID>
+  </Source>
+</Cube>
